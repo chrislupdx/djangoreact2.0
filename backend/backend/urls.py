@@ -1,11 +1,12 @@
+from django.urls import path, include
 from django.conf.urls import url, include
-from rest_framework import routers
+from rest_framework.routers import DefaultRouter
 from api import views
 
-router = routers.DefaultRouter()
+router = DefaultRouter()
 router.register(r'users', views.UserViewSet)
 router.register(r'groups', views.GroupViewSet)
-router.register(r'todos', views.TodoViewSet)
+router.register(r'todos', views.TodoViewSet, 'Todo')
 
 
 # Wire up our API using automatic URL routing.

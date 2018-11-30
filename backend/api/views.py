@@ -4,22 +4,11 @@ from api.serializers import UserSerializer, GroupSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from api.serializers import TodoSerializer
-from .models import Todo as Todomodel
+from .models import Todo as Todo
 
-class TodoViewSet(viewsets.ViewSet):
-    """
-    A simple ViewSet for listing or retrieving users.
-    """
-    def list(self, request):
-        queryset = Todomodel.objects.all()
-        serializer = TodoSerializer(queryset, many=True)
-        return Response(serializer.data)
-
-    def retrieve(self, request, pk=None):
-        queryset = Todomodel.objects.all()
-        user = get_object_or_404(queryset, pk=pk)
-        serializer = TodoSerializer(user)
-        return Response(serializer.data)
+class TodoViewSet(viewsets.ModelViewSet):
+    queryset = Todo.objects.all()
+    serializer_class = TodoSerializer
 
 class UserViewSet(viewsets.ModelViewSet):
 

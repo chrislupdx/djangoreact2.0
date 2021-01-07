@@ -21,7 +21,7 @@ httplib2==0.9.2
 idna==2.6
 language-selector==0.1
 lightdm-gtk-greeter-settings==1.2.2
-lxml==4.2.1
+lxml==4.6.2
 menulibre==2.2.0
 mugshot==0.3.1
 oauthlib==2.0.6

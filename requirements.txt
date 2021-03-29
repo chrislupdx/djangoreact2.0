@@ -31,7 +31,7 @@ Pillow==5.1.0
 psutil==5.4.2
 pycairo==1.16.2
 pycups==1.9.73
-Pygments==2.2.0
+Pygments==2.7.4
 pygobject==3.26.1
 PyJWT==1.5.3
 python-apt==1.6.3

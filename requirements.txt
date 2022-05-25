@@ -33,7 +33,7 @@ pycairo==1.16.2
 pycups==1.9.73
 Pygments==2.2.0
 pygobject==3.26.1
-PyJWT==1.5.3
+PyJWT==2.4.0
 python-apt==1.6.3
 python-debian==0.1.32
 python-magic==0.4.16
